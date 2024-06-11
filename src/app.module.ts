@@ -10,6 +10,7 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
 import { AccountSubscriberModule } from './modules/account-subscriber/account-subscriber.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AccountTransactionModule } from './modules/account-transaction/account-transaction.module';
+import { NotificationModule } from './modules/notification/notification.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { AccountTransactionModule } from './modules/account-transaction/account-
     TonModule,
     AccountSubscriberModule,
     AccountTransactionModule,
+    NotificationModule,
   ],
   controllers: [AppController],
 })
